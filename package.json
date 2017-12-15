@@ -1,0 +1,26 @@
+{
+  "name": "stylelint-mirego",
+  "version": "0.1.0",
+  "description": "A collection of linting rules for stylelint that work with our CSS/SASS guidelines.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "stylelint-plugin"
+  ],
+  "files": [
+    "rules",
+    "index.js"
+  ],
+  "author": "Rémi Prévost <rprevost@mirego.com>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/mirego/mirego-stylelint/issues"
+  },
+  "homepage": "https://github.com/mirego/mirego-stylelint",
+  "devDependencies": {
+    "stylelint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^8.0.0"
+  }
+}

@@ -32,14 +32,30 @@ This rule make sure that no more than a decimal is used in `line-height` numeric
 
 ```css
 /* Good */
-#one { line-height: 1; }
-#two { line-height: 1.1; }
-#three { line-height: 22px; }
-#four { line-height: inherit; }
+#one {
+  line-height: 1;
+}
+
+#two {
+  line-height: 1.1;
+}
+
+#three {
+  line-height: 22px;
+}
+
+#four {
+  line-height: inherit;
+}
 
 /* Bad */
-#five { line-height: 1.24; }
-#six { line-height: 20.20; }
+#five {
+  line-height: 1.24;
+}
+
+#six {
+  line-height: 20.20;
+}
 ```
 
 ## License

@@ -1,11 +1,11 @@
-# mirego-stylelint
+# stylelint-mirego
 
-The `mirego-stylelint` plugin adds Stylelint rules that help our code meet our code styling guidelines.
+The `stylelint-mirego` plugin adds Stylelint rules that help our code meet our code styling guidelines.
 
 ## Installation
 
 ```bash
-$ npm install --save-dev mirego-stylelint
+$ npm install --save-dev stylelint-mirego
 ```
 
 ## Usage
@@ -44,7 +44,7 @@ This rule make sure that no more than a decimal is used in `line-height` numeric
 
 ## License
 
-`mirego-stylelint` is © 2017 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/mirego-stylelint/blob/master/LICENSE.md) file.
+`stylelint-mirego` is © 2017 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/stylelint-mirego/blob/master/LICENSE.md) file.
 
 ## About Mirego
 

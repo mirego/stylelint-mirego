@@ -11,7 +11,7 @@ const messages = utils.ruleMessages(ruleName, {
   }
 });
 
-module.exports = createPlugin(ruleName, (options) => (cssRoot, result) => {
+module.exports = createPlugin(ruleName, () => (cssRoot, result) => {
   cssRoot.walkDecls('line-height', (node) => {
     const {value} = node;
     if (!value.match(/^\d+\.\d{2,}$/)) return;
@@ -20,7 +20,7 @@ module.exports = createPlugin(ruleName, (options) => (cssRoot, result) => {
     const message = messages.default(value, roundedValue);
 
     utils.report({ruleName, result, node, message});
-  })
+  });
 });
 
 module.exports.messages = messages;

@@ -4,6 +4,7 @@
   "description": "A collection of linting rules for stylelint that work with our CSS/SASS guidelines.",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "test": "node test/index.js"
   },
   "keywords": [
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/mirego/mirego-stylelint",
   "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.13.0",
     "stylelint": "^8.0.0",
     "stylelint-test-rule-tape": "^0.2.0"
   },

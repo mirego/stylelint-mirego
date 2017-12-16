@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "A collection of linting rules for stylelint that work with our CSS/SASS guidelines.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "node test/index.js"
+  },
   "keywords": [
     "stylelint-plugin"
   ],
@@ -18,7 +20,8 @@
   },
   "homepage": "https://github.com/mirego/mirego-stylelint",
   "devDependencies": {
-    "stylelint": "^8.0.0"
+    "stylelint": "^8.0.0",
+    "stylelint-test-rule-tape": "^0.2.0"
   },
   "peerDependencies": {
     "stylelint": "^8.0.0"

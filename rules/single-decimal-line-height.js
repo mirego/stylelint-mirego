@@ -22,3 +22,5 @@ module.exports = createPlugin(ruleName, (options) => (cssRoot, result) => {
     utils.report({ruleName, result, node, message});
   })
 });
+
+module.exports.messages = messages;

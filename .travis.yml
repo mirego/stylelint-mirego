@@ -1,0 +1,26 @@
+---
+language: node_js
+node_js:
+  - 8.8
+
+sudo: true
+
+dist: trusty
+addons:
+  chrome: stable
+
+cache:
+  npm: true
+
+install:
+  - npm install npm@5.5
+  - npm install
+
+script:
+  - npm run lint
+  - npm test
+
+notifications:
+  email:
+    on_success: 'change'
+    on_failure: 'change'

@@ -82,6 +82,42 @@ This rule makes sure that when we use the `rgba` function, we use the one Sass p
 }
 ```
 
+#### `box-shadow-optional-values`
+
+This rule makes sure that we don’t specify useless default values in `box-shadow` properties.
+
+```css
+/* Good */
+#one {
+  box-shadow: 10px 10px 0 2px #f00;
+}
+
+#two {
+  box-shadow: 10px 10px 2px #f00;
+}
+
+#three {
+  box-shadow: 10px 10px #f00;
+}
+
+#four {
+  box-shadow: inset 10px 10px 4px #f00;
+}
+
+/* Bad */
+#five {
+  box-shadow: 10px 10px 0 0 #f00;
+}
+
+#six {
+  box-shadow: 10px 10px 4px 0 #f00;
+}
+
+#seven {
+  box-shadow: inset 10px 10px 4px 0 #f00;
+}
+```
+
 ## License
 
 `stylelint-mirego` is © 2017 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/stylelint-mirego/blob/master/LICENSE.md) file.

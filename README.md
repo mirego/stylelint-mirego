@@ -77,7 +77,7 @@ This rule makes sure that when we use the `rgba` function, we use the one Sass p
 }
 
 /* Bad */
-#five {
+#four {
   background: rgba(255, 255, 255, 0.5);
 }
 ```

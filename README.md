@@ -28,7 +28,7 @@ then add the rules you want to use:
 
 #### `single-decimal-line-height`
 
-This rule make sure that no more than a decimal is used in `line-height` numeric values.
+This rule makes sure that no more than a decimal is used in `line-height` numeric values.
 
 ```css
 /* Good */
@@ -55,6 +55,30 @@ This rule make sure that no more than a decimal is used in `line-height` numeric
 
 #six {
   line-height: 20.20;
+}
+```
+
+#### `prefer-sass-rgba-function`
+
+This rule makes sure that when we use the `rgba` function, we use the one Sass provides.
+
+```css
+/* Good */
+#one {
+  background: rgba(#f00, 0.5);
+}
+
+#two {
+  background: rgba($some-variable, 0.5);
+}
+
+#three {
+  background: rgba(white, 0.5);
+}
+
+/* Bad */
+#five {
+  background: rgba(255, 255, 255, 0.5);
 }
 ```
 

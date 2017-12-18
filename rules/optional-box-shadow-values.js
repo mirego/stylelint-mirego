@@ -14,12 +14,8 @@ const messages = utils.ruleMessages(ruleName, {
 module.exports = createPlugin(ruleName, () => (cssRoot, result) => {
   cssRoot.walkDecls('box-shadow', (node) => {
     const {value} = node;
-    let values = value.split(' ');
 
-    // Skip “inset” keyword value
-    if (values[0] === 'inset') values = values.slice(1, values.length);
-
-    if (values[2] !== '0' && values[3] !== '0') return;
+    if (!/(inset +)?\w+ +\w+ +(0 +\D|0 +0|^0\w+ +0)/.test(value)) return;
 
     const message = messages.default();
 

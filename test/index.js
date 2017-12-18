@@ -32,3 +32,32 @@ testRule(singleDecimalLineHeight.rule, {
     }
   ]
 });
+
+const preferSassRgbaFunction = require('../rules/prefer-sass-rgba-function');
+
+testRule(preferSassRgbaFunction.rule, {
+  ruleName: preferSassRgbaFunction.ruleName,
+  skipBasicChecks: true,
+
+  accept: [
+    {
+      code: 'a { background: rgba($color, 0.9); }'
+    },
+    {
+      code: 'a { background: rgba(#f00, 0.9); }'
+    },
+    {
+      code: 'a { background: rgba(blue, $alpha); }'
+    }
+  ],
+  reject: [
+    {
+      code: 'a { background: rgba($red, $green, $blue, $alpha); }',
+      message: preferSassRgbaFunction.messages.default()
+    },
+    {
+      code: 'a { background: rgba(0, 0, 0, 0.9); }',
+      message: preferSassRgbaFunction.messages.default()
+    }
+  ]
+});

@@ -1,5 +1,8 @@
 # stylelint-mirego
 
+[![Build Status](https://travis-ci.org/mirego/stylelint-mirego.svg?branch=master)](https://travis-ci.org/mirego/stylelint-mirego)
+[![npm](https://img.shields.io/npm/v/stylelint-mirego.svg)](https://www.npmjs.com/package/stylelint-mirego)
+
 The `stylelint-mirego` plugin adds Stylelint rules that help our code meet our code styling guidelines.
 
 ## Installation

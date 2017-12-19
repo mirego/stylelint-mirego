@@ -1,6 +1,6 @@
 {
   "name": "stylelint-mirego",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A collection of linting rules for stylelint that work with our CSS/SASS guidelines.",
   "main": "index.js",
   "scripts": {

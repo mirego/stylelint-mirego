@@ -48,6 +48,9 @@ testRule(preferSassRgbaFunction.rule, {
     },
     {
       code: 'a { background: rgba(blue, $alpha); }'
+    },
+    {
+      code: 'a { background: linear-gradient(to bottom, rgba(#004883, 0.8), rgba(#002c50, 0.8)); }'
     }
   ],
   reject: [
@@ -57,6 +60,14 @@ testRule(preferSassRgbaFunction.rule, {
     },
     {
       code: 'a { background: rgba(0, 0, 0, 0.9); }',
+      message: preferSassRgbaFunction.messages.default()
+    },
+    {
+      code: 'a { background: linear-gradient(to bottom, rgba(255, 0, 255, 0.8), rgba(#002c50, 0.8)); }',
+      message: preferSassRgbaFunction.messages.default()
+    },
+    {
+      code: 'a { background: linear-gradient(to bottom, rgba(red, 0.8), rgba(0, 0, 255, 0.8)); }',
       message: preferSassRgbaFunction.messages.default()
     }
   ]

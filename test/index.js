@@ -62,10 +62,10 @@ testRule(preferSassRgbaFunction.rule, {
   ]
 });
 
-const optionalBoxShadowValues = require('../rules/optional-box-shadow-values');
+const boxShadowOptionalValues = require('../rules/box-shadow-optional-values');
 
-testRule(optionalBoxShadowValues.rule, {
-  ruleName: optionalBoxShadowValues.ruleName,
+testRule(boxShadowOptionalValues.rule, {
+  ruleName: boxShadowOptionalValues.ruleName,
   skipBasicChecks: true,
 
   accept: [
@@ -94,19 +94,19 @@ testRule(optionalBoxShadowValues.rule, {
   reject: [
     {
       code: 'a { box-shadow: 10px 10px 4px 0 #f00; }',
-      message: optionalBoxShadowValues.messages.default()
+      message: boxShadowOptionalValues.messages.default()
     },
     {
       code: 'a { box-shadow: inset 10px 10px 10px 0 #f00; }',
-      message: optionalBoxShadowValues.messages.default()
+      message: boxShadowOptionalValues.messages.default()
     },
     {
       code: 'a { box-shadow: inset 10px 10px 0 0 #f00; }',
-      message: optionalBoxShadowValues.messages.default()
+      message: boxShadowOptionalValues.messages.default()
     },
     {
       code: 'a { box-shadow: 10px 10px 4px 0; }',
-      message: optionalBoxShadowValues.messages.default()
+      message: boxShadowOptionalValues.messages.default()
     }
   ]
 });

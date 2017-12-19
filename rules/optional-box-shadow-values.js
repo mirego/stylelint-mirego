@@ -4,7 +4,7 @@
 const {createPlugin, utils} = require('stylelint');
 
 // Configuration
-const ruleName = 'mirego/optional-box-shadow-values';
+const ruleName = 'mirego/box-shadow-optional-values';
 const messages = utils.ruleMessages(ruleName, {
   default: () => {
     return 'You should not specify `0` as box-shadow’s `blur-radius` or `spread-radius` value because it’s `0` by default.';

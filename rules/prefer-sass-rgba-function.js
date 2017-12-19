@@ -14,7 +14,7 @@ const messages = utils.ruleMessages(ruleName, {
 module.exports = createPlugin(ruleName, () => (cssRoot, result) => {
   cssRoot.walkDecls((node) => {
     const {value} = node;
-    if (!value.match(/rgba\([^,]+,[^,]+,[^,]+,[^,]+\)/)) return;
+    if (!value.match(/rgba\([^,)]+,[^,)]+,[^,)]+,[^,)]+\)/)) return;
 
     const message = messages.default();
 

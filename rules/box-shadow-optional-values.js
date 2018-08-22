@@ -14,7 +14,7 @@ const messages = utils.ruleMessages(ruleName, {
 module.exports = createPlugin(ruleName, () => (cssRoot, result) => {
   cssRoot.walkDecls('box-shadow', (node) => {
     const {value} = node;
-    if (!value.match(/(inset\s+)?\w+\s+\w+\s+(0\s*$|0\s+\D|0\s+0|^0\w+\s+0)/)) return;
+    if (!value.match(/(inset\s+)?\d\w*\s+\d\w*\s+(0\s*$|0\s+\D|0\s+0|^0\w+\s+0)/)) return;
 
     const message = messages.default();
 

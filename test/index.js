@@ -99,6 +99,9 @@ testRule(boxShadowOptionalValues.rule, {
       code: 'a { box-shadow: inset 10px 10px 5px #f00; }'
     },
     {
+      code: 'a { box-shadow: inset 0 0 0 30px red; }'
+    },
+    {
       code: 'a { box-shadow: inherit; }'
     }
   ],

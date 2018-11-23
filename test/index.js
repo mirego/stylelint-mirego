@@ -124,3 +124,30 @@ testRule(boxShadowOptionalValues.rule, {
     }
   ]
 });
+
+const noBemSelector = require('../rules/no-bem-selector');
+
+testRule(noBemSelector.rule, {
+  ruleName: noBemSelector.ruleName,
+  skipBasicChecks: true,
+
+  accept: [
+    {
+      code: '.button { color: hotpink; }'
+    },
+    {
+      code: '.button-something { color: hotpink; }'
+    },
+    {
+      code: '.button.modifier { color: hotpink; }'
+    }
+  ],
+  reject: [
+    {
+      code: '.button__children { color: hotpink; }'
+    },
+    {
+      code: '.button.button--modifier { color: hotpink; }'
+    }
+  ]
+});

@@ -12,7 +12,7 @@ const messages = utils.ruleMessages(ruleName, {
 });
 
 // Constants
-const BEM_REGEX = /(\-\-|\_\_)/;
+const BEM_REGEX = /\w(\-\-|\_\_)\w/;
 
 module.exports = createPlugin(ruleName, () => (cssRoot, result) => {
   cssRoot.walkRules(BEM_REGEX, (rule) => {

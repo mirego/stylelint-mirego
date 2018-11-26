@@ -140,6 +140,12 @@ testRule(noBemSelector.rule, {
     },
     {
       code: '.button.modifier { color: hotpink; }'
+    },
+    {
+      code: 'element { --main-background-color: red; }'
+    },
+    {
+      code: 'element { background: var(--main-background-color); }'
     }
   ],
   reject: [

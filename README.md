@@ -121,6 +121,24 @@ This rule makes sure that we don’t specify useless default values in `box-shad
 }
 ```
 
+### `no-bem-selector`
+
+This rule makes sure that we don't use the BEM notation for selectors.
+
+```css
+/* Good */
+.button { }
+
+.button.active { }
+
+.button .label { }
+
+/* Bad */
+.button--active { }
+
+.button__label { }
+```
+
 ## License
 
 `stylelint-mirego` is © 2017 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/stylelint-mirego/blob/master/LICENSE.md) file.

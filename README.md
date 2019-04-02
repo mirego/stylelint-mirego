@@ -1,9 +1,11 @@
-# stylelint-mirego
-
-[![Build Status](https://travis-ci.org/mirego/stylelint-mirego.svg?branch=master)](https://travis-ci.org/mirego/stylelint-mirego)
-[![npm](https://img.shields.io/npm/v/stylelint-mirego.svg)](https://www.npmjs.com/package/stylelint-mirego)
-
-The `stylelint-mirego` plugin adds Stylelint rules that help our code meet our code styling guidelines.
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/11348/55367428-f609d300-54ba-11e9-94d1-e46ad0dc7eb3.png" width="600" />
+  <p><br />The `stylelint-mirego` plugin adds Stylelint rules that help our code meet our code styling guidelines.</p>
+  <p>
+    <a href="https://travis-ci.com/mirego/stylelint-mirego"><img src="https://travis-ci.com/mirego/stylelint-mirego.svg?branch=master" /></a>
+    <a href="https://www.npmjs.com/package/stylelint-mirego"><img src="https://img.shields.io/npm/v/stylelint-mirego.svg" /></a>
+  </p>
+</div>
 
 ## Installation
 
@@ -141,7 +143,9 @@ This rule makes sure that we don't use the BEM notation for selectors.
 
 ## License
 
-`stylelint-mirego` is © 2017 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/stylelint-mirego/blob/master/LICENSE.md) file.
+`stylelint-mirego` is © 2017-2019 [Mirego](http://www.mirego.com) and may be freely distributed under the [New BSD license](http://opensource.org/licenses/BSD-3-Clause).  See the [`LICENSE.md`](https://github.com/mirego/stylelint-mirego/blob/master/LICENSE.md) file.
+
+The nail logo is based on [this lovely icon by Smalllike](https://thenounproject.com/term/nail/1809210), from The Noun Project. Used under a [Creative Commons BY 3.0](http://creativecommons.org/licenses/by/3.0/) license.
 
 ## About Mirego
 

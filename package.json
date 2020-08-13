@@ -23,7 +23,7 @@
   "devDependencies": {
     "babel-eslint": "^8.0.3",
     "eslint": "^4.13.0",
-    "stylelint": "^8.0.0",
+    "stylelint": "^13.6.1",
     "stylelint-test-rule-tape": "^0.2.0"
   },
   "peerDependencies": {
